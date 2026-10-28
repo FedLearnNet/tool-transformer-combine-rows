@@ -1,0 +1,64 @@
+config:
+  hyperparams:
+  - default: '|'
+    description: Separator used to join fields a and b
+    maxValue: null
+    minValue: null
+    name: delimiter
+    options: []
+    pattern: null
+    type: STRING
+  input:
+  - delimiter: ','
+    description: Input row schema. Input dictionary containing 'a' and 'b' keys
+      with values to combine
+    hasHeader: true
+    maxValue: null
+    minValue: null
+    mode: null
+    name: input
+    required: false
+    shape: null
+    tabularSchema:
+      allowOnlyNumbers: null
+      columns: null
+      maxColumns: null
+      maxRows: null
+      minColumns: null
+      minRows: null
+      nullPolicy: null
+      prohibitedNulls: null
+      requiredColumns:
+      - a
+      - b
+    type: CSV
+  output:
+  - delimiter: ','
+    description: Output row schema. Input dictionary containing 'a' and 'b' keys
+      with values to combine
+    hasHeader: true
+    maxValue: null
+    minValue: null
+    mode: null
+    name: output
+    required: false
+    shape: null
+    tabularSchema:
+      allowOnlyNumbers: null
+      columns: null
+      maxColumns: null
+      maxRows: null
+      minColumns: null
+      minRows: null
+      nullPolicy: null
+      prohibitedNulls: null
+      requiredColumns:
+      - value
+    type: CSV
+info:
+  longDescription: null
+  name: tool-transformer-combine-rows
+  shortDescription: Combines two fields from each input row into one value using a configurable separator.
+  slug: tool-transformer-combine-rows
+  sourceUrl: https://github.com/FedLearnNet/tool-transformer-combine-rows
+  type: DATA_TRANSFORMATION
