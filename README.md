@@ -1,4 +1,4 @@
-# tool-transformer-combine-rows
+# transformer-combine-rows
 
 Combines two fields from each input row into one value using a configurable separator.
 

@@ -57,8 +57,8 @@ config:
     type: CSV
 info:
   longDescription: null
-  name: tool-transformer-combine-rows
+  name: transformer-combine-rows
   shortDescription: Combines two fields from each input row into one value using a configurable separator.
-  slug: tool-transformer-combine-rows
+  slug: transformer-combine-rows
   sourceUrl: https://github.com/FedLearnNet/tool-transformer-combine-rows
   type: DATA_TRANSFORMATION
